@@ -1,0 +1,167 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>江苏天信建设项目咨询有限公司</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}" />
+    <!-- 消除顶端一个24像素的空白  -->
+    <style type="text/css">
+    * {
+        padding:0 auto;
+        margin:0 auto;
+      }
+    </style>
+    <script src="{% static '/js/sethomesetfav.js' %}" type="text/javascript" charset="gb2312"></script>
+    <script src="{% static '/js/myfocus-2.0.1.min.js' %}" type="text/javascript"></script>
+    <script src="{% static '/js/mf-pattern/mF_YSlider.js' %}" type="text/javascript"></script>
+    <link href="{% static '/js/mf-pattern/mF_YSlider.css' %}" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+      myFocus.set({id:'picBox'})
+    </script>
+  </head>
+  
+  <body>
+    <div class="top">
+      <div class="top_content">
+        <ul>
+          <li><a href="#">联系我们</a></li>
+          <li><a href="javascript:addFavorite()">加入收藏</a></li>
+          <li><a href="javascript:setHome(this,window.location)">设为首页</a></li>
+        </ul>
+      </div>
+    </div><!--Top End-->
+
+  <div class="wrap">
+    <div class="logo">
+      <div class="logo_left">
+        <img src="{% static '/images/tx_logo.png' %}" alt="天信咨询"/>
+      </div>
+      <div class="logo_right">
+        <img src="{% static '/images/tel.png' %}" alt="服务热线"/>联系热线：<span class="tel">123-465-789</span>
+      </div>
+    </div><!--logo end-->
+    <div class="nav">
+      <div class="nav_left"></div>
+      <div class="nav_mid">
+        <div class="nav_mid_left">
+          <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">关于天信</a></li>
+            <li><a href="#">行业资讯</a></li>
+            <li><a href="#">公司业绩</a></li>
+            <li><a href="#">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="nav_mid_right">
+          <form action="" method="post">
+            <input type="text" class="serch_text" />
+          </form>
+        </div>
+      </div><!--nav_mid end-->
+      <div class="nav_right"></div>
+    </div><!--nav end -->
+
+    <div class="ad" id="picBox">
+      <div class="loading"><img src="{% static '/images/loading.gif' %}" alt="加载中" /></div>
+      <div class="pic">
+        <ul>
+          <li><img src="{% static '/images/ad1.jpg' %}"></li>
+          <li><img src="{% static '/images/ad2.jpg' %}"></li>
+          <li><img src="{% static '/images/ad3.jpg' %}"></li>
+          <li><img src="{% static '/images/ad4.jpg' %}"></li>
+        </ul>
+      </div>
+    </div><!--ad end-->
+    <div  class="main">
+      <div class="news">
+        <div class="title">
+          <h2 class="title_left">行业资讯</h2><span class="title_right"><a href="news.html">More&gt;&gt;</a></span>
+        </div><!--title end-->
+        <div class="pic_news">
+          <img src="{% static '/images/news.jpg' %}"/><h2><a href="http://www.njzjxh.cn/NECACMS/contents/1122/1934.html">同舟共济，共克时艰</a></h2><p>南京市工程造价管理协会向“全力抗击新型冠状病毒感染肺炎”项目捐款贰万元。<br/><a href="news.html">Learn More&gt;&gt;</a></p>
+        </div><!--pic_news-->
+        <div class="news_list">
+          <ul>
+            <li><span>2020-03-03</span><a href="http://www.njzjxh.cn/NECACMS/contents/1121/1935.html">市协会关于疫情防控期间相关业务事项办理的通知</a></li>
+            <li><span>2020-03-02</span><a href="http://www.njzjxh.cn/NECACMS/contents/1121/1933.html">协会关于暂停对外办公的通知</a></li>
+            <li><span>2020-03-01</span><a href="http://www.njzjxh.cn/NECACMS/contents/1121/1930.html">关于组织2019年南京市造价行业社会公益活动情况的通报</a></li>
+          </ul>
+        </div><!--news_list-->
+      </div><!--news end-->
+      <div class="course">
+        <div class="title">
+          <h2 class="title_left">公司业绩</h2><span class="title_right"><a href="news.html">More&gt;&gt;</a></span>
+        </div><!--title end-->
+        <div class="course_pic">
+          <img src="{% static '/images/loading.gif' %}../static/images/txexample.jpg" /><h2><a href="news.html">香港国际机场</a></h2><p>香港国际机场距香港市区34千米，为4F级国际民用国际机场，世界最繁忙的航空港之一，全球超过100家航空公司在此运营。</p>
+        </div><!--course_pic end-->
+        <div class="course_type">
+          <ul>
+            <li>港珠澳大桥</li>
+            <li>上海中心大厦</li>
+            <li>北京地铁网络</li>
+          </ul>
+        </div><!--course_type end-->
+      </div><!--course end-->
+      <div class="sidebar">
+        <div class="video">
+          <div class="title"><h2 class="title_left">媒体聚焦</h2></div>
+          <div class="video_content">
+            <iframe height=150 width=228 src='https://player.youku.com/embed/XMzQwMjQzMTAwOA==' frameborder=0 allowfullscreen></iframe>
+          </div>
+        </div><!--video end-->
+        <div class="sidebar_ad">
+          <img src="{% static '/images/loading.gif' %}../static/images/app.jpg" />
+        </div><!--sidebar_ad end-->
+      </div><!--sidebar end-->
+    </div><!--main end-->
+  </div><!--wrap end-->
+
+  <div class="copyright">
+    <div class="copyright_content">
+      <ul>
+        <li><a href="#">关于</a>
+          <ul>
+            <li><a href="#">品牌故事</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">版权声明</a></li>
+          </ul>
+        </li>
+        <li><a href="#">范围</a>
+          <ul>
+            <li><a href="#">工程咨询</a></li>
+            <li><a href="#">项目监理</a></li>
+            <li><a href="#">财务审计</a></li>
+            <li><a href="#">资产评估</a></li>
+          </ul>
+        </li>
+        <li><a href="#">留言</a>
+          <ul>
+            <li><a href="#">新浪微博</a></li>
+            <li><a href="#">腾讯微信</a></li>
+            <li><a href="#">企业微信</a></li>
+            <li><a href="#">QQ空间</a></li>
+          </ul>
+        </li>
+        <li><a href="#">关注</a>
+          <ul>
+            <li><a href="#">意见反馈</a></li>
+            <li><a href="#">问题留言</a></li>
+            <li><a href="#">媒体联络</a></li>
+            <li><a href="#">在线客服</a></li>
+         </ul>
+        </li>
+        <li><a href="#"><img src="{% static '/images/weixin.png' %}" />微信关注</a>
+          <ul>
+            <li><img src="{% static '/images/qrcode.jpg' %}" /></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--copyright_content end-->
+  </div><!--copyright end-->
+
+  </body>
+  
+</html>
